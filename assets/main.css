@@ -10,6 +10,7 @@ body {
   font-weight: 700;
   background-color: #090b1a;
   font-size: 15px;
+  padding: 10rem;
 }
 
 body .card {
@@ -20,7 +21,6 @@ body .card {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  margin: 15rem;
   border-radius: 1rem;
   background-color: #1b1938;
 }

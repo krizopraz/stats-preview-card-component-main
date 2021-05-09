@@ -16,11 +16,11 @@ body{
     font-weight: 700;
     background-color: $mainbg;
     font-size: 15px;
+    padding: 10rem;
     .card{
         height: fit-content;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 15rem;
         border-radius: 1rem;
         background-color: $cardbg;
         .image{
