@@ -48,12 +48,18 @@ body{
             }
         }
         .content{
-            padding: 7rem;
+            margin: 5rem;
+            padding-right: 4rem; 
             .content-main{
                 h1{
                     color: $main;
+                    font-size: 2.5rem;
                 }
                 p{
+                    margin-top: 2rem;
+                    padding-right: 4rem;
+                    line-height: 1.7rem;
+                    letter-spacing: 0.1rem;
                     color: $mainP;
                     font-weight: 400;
                 }
@@ -62,10 +68,12 @@ body{
                 }
             }
             .content-stats{
+                margin-top: 9rem;
                 display: flex;
                 font-family: $lexend;
                 font-weight: 400;
                 .stats{
+                    margin-right: 4rem;
                     h1{
                         font-family: $inter;
                         color: $main;
