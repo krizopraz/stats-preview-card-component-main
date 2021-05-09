@@ -1,0 +1,82 @@
+$mainbg: hsl(233, 47%, 7%);
+$cardbg: hsl(244, 38%, 16%);
+$accent: hsl(277, 64%, 61%);
+$main: hsl(0, 0%, 100%);
+$mainP: hsla(0, 0%, 100%, 0.75);
+$statHead:hsla(0, 0%, 100%, 0.6);
+$inter:'Inter', sans-serif;
+$lexend:'Lexend Deca', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: $inter;
+    font-weight: 700;
+    background-color: $mainbg;
+    font-size: 15px;
+    .card{
+        height: fit-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 15rem;
+        border-radius: 1rem;
+        background-color: $cardbg;
+        .image{
+            position: relative;
+            &.mobile{
+                border-radius: 1rem 0 0 1rem;
+                display: none;
+            }
+            place-self: end;
+            height: 100%;
+            width: 100%;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: .30;
+                background-color: $accent;}
+                background-blend-mode: overlay;
+            img{
+                border-radius: 0rem 1rem 1rem 0rem;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .content{
+            padding: 7rem;
+            .content-main{
+                h1{
+                    color: $main;
+                }
+                p{
+                    color: $mainP;
+                    font-weight: 400;
+                }
+                span{
+                    color: $accent;
+                }
+            }
+            .content-stats{
+                display: flex;
+                font-family: $lexend;
+                font-weight: 400;
+                .stats{
+                    h1{
+                        font-family: $inter;
+                        color: $main;
+                    }
+                    span{
+                        letter-spacing: 0.1rem;
+                        color: $statHead;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}

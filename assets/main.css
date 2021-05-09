@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  background-color: #090b1a;
+  font-size: 15px;
+}
+
+body .card {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: 15rem;
+  border-radius: 1rem;
+  background-color: #1b1938;
+}
+
+body .card .image {
+  position: relative;
+  place-self: end;
+  height: 100%;
+  width: 100%;
+  background-blend-mode: overlay;
+}
+
+body .card .image.mobile {
+  border-radius: 1rem 0 0 1rem;
+  display: none;
+}
+
+body .card .image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: .30;
+  background-color: #aa5cdb;
+}
+
+body .card .image img {
+  border-radius: 0rem 1rem 1rem 0rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+body .card .content {
+  padding: 7rem;
+}
+
+body .card .content .content-main h1 {
+  color: white;
+}
+
+body .card .content .content-main p {
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 400;
+}
+
+body .card .content .content-main span {
+  color: #aa5cdb;
+}
+
+body .card .content .content-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+body .card .content .content-stats .stats h1 {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+body .card .content .content-stats .stats span {
+  letter-spacing: 0.1rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=main.css.map */
